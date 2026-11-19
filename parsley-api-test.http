@@ -1,0 +1,76 @@
+@baseUrl = http://localhost:8081
+
+### -----------------------------------------------------------------
+### Health Check
+### -----------------------------------------------------------------
+
+GET {{baseUrl}}/health
+
+### -----------------------------------------------------------------
+### CRUD APIs Check
+### -----------------------------------------------------------------
+
+
+### Create user 
+POST {{baseUrl}}/users/
+Content-Type: application/json
+
+{
+  "first_name": "Natasha",
+  "last_name": "Nguyen",
+  "email": "natashan@example.com"
+}
+
+### List users 
+GET {{baseUrl}}/users/
+
+### Get user by id=1 
+GET {{baseUrl}}/users/1
+
+### Create category 
+POST {{baseUrl}}/categories/
+Content-Type: application/json
+
+{
+  "description": "Online Services"
+}
+
+### List categories 
+GET {{baseUrl}}/categories/
+
+### Get category by id=1 
+GET {{baseUrl}}/categories/1
+
+### List expenses
+GET {{baseUrl}}/expenses/
+
+### Create expense
+POST {{baseUrl}}/expenses/
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "category_id": 2,
+  "amount": 50.75,
+  "description": "Lunch"
+}
+
+### Get expense by id (assumes id=1)
+GET {{baseUrl}}/expenses/1
+
+### Update expense id=1
+PUT {{baseUrl}}/expenses/1
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "category_id": 3,
+  "amount": 45.50,
+  "description": "Lunch corrected"
+}
+
+### Delete expense id=1
+DELETE {{baseUrl}}/expenses/1
+
+### Verify deleted (should be not found)
+GET {{baseUrl}}/expenses/1

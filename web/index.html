@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parsley — soft money habits</title>
+    <meta
+      name="description"
+      content="Parsley helps you track spending, understand categories, and build calmer money habits."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">P</div>
+          <div>
+            <p class="brand-name">Parsley</p>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#overview">Overview</a>
+          <a href="#categories">Categories</a>
+          <a href="#insights">Insights</a>
+        </nav>
+
+        <button class="ghost-button">Profile</button>
+      </header>
+
+      <main class="content">
+        <section class="hero" id="overview">
+          <div class="hero-copy">
+            <div class="eyebrow">Your calm daily money rhythm</div>
+            <h1>Make spending feel lighter.</h1>
+            <p>
+              Track your habits, see your categories, and keep your month feeling
+              steady and in control.
+            </p>
+
+            <div class="cta-row">
+              <button class="primary-button">Add expense</button>
+              <button class="secondary-button">View summary</button>
+            </div>
+
+            <div class="mini-stats">
+              <div class="mini-card">
+                <span>Monthly spend</span>
+                <strong>$1,240</strong>
+              </div>
+              <div class="mini-card">
+                <span>Saved</span>
+                <strong>$320</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Parsley dashboard preview">
+            <div class="dashboard-card main-panel">
+              <div class="card-header">
+                <p>August overview</p>
+                <span class="badge">+12.4%</span>
+              </div>
+
+              <div class="stats-row">
+                <div>
+                  <label>Spent</label>
+                  <strong>$1,240</strong>
+                </div>
+                <div>
+                  <label>Budget</label>
+                  <strong>$1,800</strong>
+                </div>
+              </div>
+
+              <div class="bar-chart" aria-hidden="true">
+                <span style="height: 58%"></span>
+                <span style="height: 72%"></span>
+                <span style="height: 40%"></span>
+                <span style="height: 80%"></span>
+                <span style="height: 63%"></span>
+                <span style="height: 92%"></span>
+                <span style="height: 68%"></span>
+              </div>
+            </div>
+
+            <div class="floating-card top-card">
+              <div class="dot dot-green"></div>
+              <div>
+                <p>Food</p>
+                <strong>$320</strong>
+              </div>
+            </div>
+
+            <div class="floating-card bottom-card">
+              <div class="dot dot-peach"></div>
+              <div>
+                <p>Transport</p>
+                <strong>$180</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="analytics" id="categories">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Spending</p>
+              <h2>Category snapshot</h2>
+            </div>
+            <button class="text-button">See all</button>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card highlight">
+              <div class="category-top">
+                <span class="chip chip-green">Food</span>
+                <span class="trend up">+8%</span>
+              </div>
+              <h3>$320</h3>
+              <p>Groceries + coffee runs</p>
+            </article>
+
+            <article class="category-card">
+              <div class="category-top">
+                <span class="chip chip-peach">Travel</span>
+                <span class="trend down">-4%</span>
+              </div>
+              <h3>$180</h3>
+              <p>Commutes + train cards</p>
+            </article>
+
+            <article class="category-card">
+              <div class="category-top">
+                <span class="chip chip-lilac">Lifestyle</span>
+                <span class="trend up">+5%</span>
+              </div>
+              <h3>$260</h3>
+              <p>Shopping + treats</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="insights" id="insights">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Trends</p>
+              <h2>Recent activity</h2>
+            </div>
+          </div>
+
+          <div class="insight-layout">
+            <div class="transaction-panel">
+              <div class="panel-head">
+                <h3>Latest expenses</h3>
+                <span>Today</span>
+              </div>
+
+              <ul class="transaction-list">
+                <li>
+                  <div class="transaction-main">
+                    <span class="icon-circle green">F</span>
+                    <div>
+                      <strong>Fresh groceries</strong>
+                      <small>Food</small>
+                    </div>
+                  </div>
+                  <span class="amount">-$52.40</span>
+                </li>
+                <li>
+                  <div class="transaction-main">
+                    <span class="icon-circle peach">T</span>
+                    <div>
+                      <strong>Train pass</strong>
+                      <small>Transport</small>
+                    </div>
+                  </div>
+                  <span class="amount">-$28.00</span>
+                </li>
+                <li>
+                  <div class="transaction-main">
+                    <span class="icon-circle lilac">L</span>
+                    <div>
+                      <strong>Bookshop</strong>
+                      <small>Lifestyle</small>
+                    </div>
+                  </div>
+                  <span class="amount">-$19.90</span>
+                </li>
+              </ul>
+            </div>
+
+            <aside class="summary-panel">
+              <div class="panel-head">
+                <h3>Quick note</h3>
+              </div>
+
+              <div class="summary-box">
+                <p class="summary-kicker">This week</p>
+                <h4>You're doing well.</h4>
+                <p>
+                  Spending is down 9% compared to last week. Your food category is
+                  steady and your transport costs are under control.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite">
+      Expense logged successfully.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
